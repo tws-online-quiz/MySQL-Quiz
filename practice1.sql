@@ -18,7 +18,7 @@ CREATE TABLE Employee(
 ) engine=InnoDB DEFAULT CHARSET = utf8;
 
 # 3.将`employee-data.csv`文件中的数据导入数据表Employee中
-LOAD DATA LOCAL INFILE '/yourPath/employee-data.csv' INTO TABLE Employee FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (id, name, age, gender, companyId, salary);
+LOAD DATA LOCAL INFILE '/var/sources/employee-data.csv' INTO TABLE Employee FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (id, name, age, gender, companyId, salary);
 
 # 4.在数据库employee_db中创建table：`Company`
 CREATE TABLE Company(
@@ -28,7 +28,14 @@ CREATE TABLE Company(
 ) engine=InnoDB DEFAULT CHARSET = gbk;
 
 # 5.将`employee-data.csv`文件中的数据导入Company数据表中
-LOAD DATA LOCAL INFILE '/yourPath/company-data.csv' INTO TABLE Company FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (id, companyName, employeesNumber);
+LOAD DATA LOCAL INFILE '/var/sources/company-data.csv' INTO TABLE Company FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (id, companyName, employeesNumber);
+
 
 # 6.找出Employee表中姓名包含`n`字符并且薪资大于6000的雇员所有个人信息
 SELECT * FROM Employee WHERE `name` LIKE '%n%' AND salary > 6000;
+# 6结果展示
+# +----+------------+-----+----------+-----------+--------+
+# | id | name       | age | gender   | companyId | salary |
+# +----+------------+-----+----------+-----------+--------+
+# |  1 | 'xiaohong' |  19 | 'female' |         1 |   7000 |
+# +----+------------+-----+----------+-----------+--------+

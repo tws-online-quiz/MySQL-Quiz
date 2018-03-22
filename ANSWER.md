@@ -5,9 +5,10 @@
 
 ### 如何启动
 + 解压 `answer.zip`，用 IntelliJ IDE 打开
-+ 答案分别在practice1-4
++ 首先本地启动`mysql server`
++ 然后执行`mysql -uroot -p*****`
++ 进入mysql的控制台后,使用`source practice*.sql`指令，即可完成一道题目，题目结果在每个practice中都有展示。
 
 ### 重点讲解
-
 + 建议分别学习单表多表的查询方式
 + 答案实现方式有多种，完成题目需求即可
