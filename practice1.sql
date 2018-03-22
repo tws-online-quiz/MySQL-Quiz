@@ -30,3 +30,5 @@ CREATE TABLE Company(
 #将csv文件中的数据导入数据表中
 LOAD DATA LOCAL INFILE '/var/sources/company-data.csv' INTO TABLE Company FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (id, companyName, employeesNumber);
 
+# 找出Employee表中姓名包含`g`字符并且薪资大于6000的雇员所有个人信息
+SELECT * FROM Employee WHERE `name` LIKE '%n%' AND salary > 6000;
