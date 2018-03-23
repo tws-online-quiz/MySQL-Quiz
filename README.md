@@ -13,7 +13,7 @@
 
 ## 输出规范
 - 完成`practice1-practice4`文件中的所有需求
-- 创建新的文件`query.sql`
+- 创建新的文件`result.txt`
 - 将每个practice的查询结果都粘贴至`result.txt`文件中
   - 举个例子：
   ```
