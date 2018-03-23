@@ -9,3 +9,6 @@
 # 5.将`employee-data.csv`文件中的数据导入Company数据表中
 
 # 6.找出Employee表中姓名包含`n`字符并且薪资大于6000的雇员所有个人信息
+
+
+# ps:本练习中只需要将6的结果复制到`result.txt`文件中
