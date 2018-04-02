@@ -5,7 +5,7 @@
 
 ### 如何启动
 + 解压 `answer.zip`，用 IntelliJ IDE 打开
-+ 首先本地启动`mysql server`
++ 首先本地启动`MySQl`
 + 然后执行`mysql -uroot -p*****`
 + 进入mysql的控制台后,使用`source practice*.sql`指令(路径是该`sql`文件的绝对路径)，即可完成一道题目，题目结果在每个practice中都有展示。
 
